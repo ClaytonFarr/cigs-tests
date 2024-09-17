@@ -1,7 +1,11 @@
 {
   "name": "cigs-workflow-tests",
   "scripts": {
-    "start": "tsc && node dist/generate.js"
+    "generate": "tsc && node dist/generate.js",
+    "schema": "tsc && node dist/schema.js",
+    "classify": "tsc && node dist/classify.js",
+    "handler": "tsc && node dist/handler.js",
+    "uses": "tsc && node dist/uses.js"
   },
   "devDependencies": {
     "@types/node": "^14.14.31",

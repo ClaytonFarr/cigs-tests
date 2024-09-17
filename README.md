@@ -1,13 +1,18 @@
-# Exploring use of Cigs Framework
+# Exploring Cigs Framework
 
 - https://github.com/cigs-tech/cigs
-- requires manually setting OPENAI_API_KEY during each work session as a local var via `export OPENAI_API_KEY=sk-...`
+- each work session requires manually setting OPENAI_API_KEY as local var `export OPENAI_API_KEY=sk-...`
 
-1. Inspecting individual methods
-   - [x] .generate
-     - [ ] save logs for different inputs
-   - [ ] .schema
-   - [ ] .classify
-   - [ ] .handler
-   - [ ] .uses
-   - [ ] .log
+1. Inspect methods
+   - [x] `.generate()`
+   - [x] `.schema()`
+   - [x] `.classify()`
+   - [x] `.handler()`
+   - [ ] `.uses()`
+
+2. Inspect config options
+   - [x] `config.setModel()`
+   - [x] `config.setLogLevel()`
+   - [x] `config.addInstruction()`
+   - [x] `config.addExample()`
+   - [x] `config.setDescription()`
