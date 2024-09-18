@@ -30,10 +30,10 @@ const schemaCig = cig("album-generator", albumInputSchema, (config) => {
 
 (async () => {
   try {
-    // const call01Json = await schemaCig.run({ genre: "rock" });
+    const call01Json = await schemaCig.run({ genre: "rock" });
     // console.log('Call 01 as Json: ', call01Json);
 
-    const call01String = await schemaCig.run("I want a list of rock albums");
+    // const call01String = await schemaCig.run("I want a list of rock albums");
     // console.log('Call 01 as String: ', call01String);
     
     // const call02Json = await schemaCig.run({ genre: "country" });
@@ -47,7 +47,7 @@ const schemaCig = cig("album-generator", albumInputSchema, (config) => {
 })();
 
 /*
-* .schema() observations
+* .schema()
 
 * If using JSON object as input:
 

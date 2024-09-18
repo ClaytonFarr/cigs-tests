@@ -26,7 +26,8 @@ const generateCig = cig("album-generator", albumInputSchema, (config) => {
       "{ genre: 'rock' }",
       { title: "Exile on Main St.", artist: "The Rolling Stones", year: 1972, numTracks: 12 },
     );
-  });
+  })
+;
 
 (async () => {
   try {
@@ -48,7 +49,7 @@ const generateCig = cig("album-generator", albumInputSchema, (config) => {
 })();
 
 /*
-* .generate() observations
+* .generate()
 
 * If using JSON object as input:
 

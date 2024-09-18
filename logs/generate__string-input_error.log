@@ -1,0 +1,194 @@
+// input: 'I want a list of christmas albums'
+
+2024-09-18 13:27:19.846 INFO    /node_modules/cigs/dist/index.cjs:728   cig-album-generator     {
+  context: 'Running cig',
+  input: 'I want a list of christmas albums',
+  operationCount: 1
+}
+2024-09-18 13:27:19.850 DEBUG   /node_modules/cigs/dist/index.cjs:735   cig-album-generator     {
+  context: 'Received string input'
+}
+(node:80456) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+2024-09-18 13:27:24.034 DEBUG   /node_modules/cigs/dist/index.cjs:738   cig-album-generator     {
+  context: 'Processed string input',
+  result: {
+    genre: 'Here is a list of popular Christmas albums across various genres and years:\n' +
+      '\n' +
+      '1. **"A Charlie Brown Christmas" by Vince Guaraldi Trio (1965)**\n' +
+      '   - A jazz album that has become a quintessential part of the holiday season, featuring whimsical and nostalgic melodies.\n' +
+      '\n' +
+      '2. **"Merry Christmas" by Mariah Carey (1994)**\n' +
+      '   - Known for the iconic song "All I Want for Christmas Is You," this album blends traditional Christmas songs with contemporary pop tunes.\n' +
+      '\n' +
+      '3. **"Elvis’ Christmas Album" by Elvis Presley (1957)**\n' +
+      '   - A classic rock and roll take on Christmas songs, including "Blue Christmas" and "Santa Bring My Baby Back (To Me)."\n' +
+      '\n' +
+      '4. **"Christmas" by Michael Bublé (2011)**\n' +
+      '   - A modern crooner’s take on classic holiday hits including "It’s Beginning to Look a Lot Like Christmas" and "White Christmas."\n' +
+      '\n' +
+      '5. **"The Christmas Song" by Nat King Cole (1961)**\n' +
+      '   - Nat King Cole’s smooth vocals on songs like "The Christmas Song" set a warm, nostalgic mood for the holidays.\n' +
+      '\n' +
+      '6. **"Miracles: The Holiday Album" by Kenny G (1994)**\n' +
+      '   - Instrumental and smooth jazz holiday classics, perfect for a relaxing holiday atmosphere.\n' +
+      '\n' +
+      '7. **"A Christmas Gift for You From Phil Spector" (1963)**\n' +
+      '   - A collection of Christmas songs featuring artists like The Ronettes and The Crystals, ideal for fans of the Wall of Sound.\n' +
+      '\n' +
+      '8. **"The Magic of Christmas" by Nat King Cole and The Ralph Carmichael Choir (1960)**\n' +
+      "   - Filled with traditional holiday songs, emphasizing Cole's rich voice surrounded by lush orchestration.\n" +
+      '\n' +
+      '9. **"Christmas in the Heart" by Bob Dylan (2009)**\n' +
+      "   - This album offers unique renditions of holiday standards with Dylan's unmistakable voice and style.\n" +
+      '\n' +
+      '10. **"A Very She & Him Christmas" by She & Him (2011)**\n' +
+      '    - Folksy renditions of Christmas classics by the indie duo, bringing a charming and whimsical feel to holiday music.\n' +
+      '\n' +
+      'These albums provide a variety of musical styles and interpretations of Christmas music, ensuring that there’s something for everyone to enjoy during the festive season.'
+  }
+}
+2024-09-18 13:27:24.036 DEBUG   /node_modules/cigs/dist/index.cjs:754   cig-album-generator     {
+  context: 'Operation 1 Input',
+  data: {
+    genre: 'Here is a list of popular Christmas albums across various genres and years:\n' +
+      '\n' +
+      '1. **"A Charlie Brown Christmas" by Vince Guaraldi Trio (1965)**\n' +
+      '   - A jazz album that has become a quintessential part of the holiday season, featuring whimsical and nostalgic melodies.\n' +
+      '\n' +
+      '2. **"Merry Christmas" by Mariah Carey (1994)**\n' +
+      '   - Known for the iconic song "All I Want for Christmas Is You," this album blends traditional Christmas songs with contemporary pop tunes.\n' +
+      '\n' +
+      '3. **"Elvis’ Christmas Album" by Elvis Presley (1957)**\n' +
+      '   - A classic rock and roll take on Christmas songs, including "Blue Christmas" and "Santa Bring My Baby Back (To Me)."\n' +
+      '\n' +
+      '4. **"Christmas" by Michael Bublé (2011)**\n' +
+      '   - A modern crooner’s take on classic holiday hits including "It’s Beginning to Look a Lot Like Christmas" and "White Christmas."\n' +
+      '\n' +
+      '5. **"The Christmas Song" by Nat King Cole (1961)**\n' +
+      '   - Nat King Cole’s smooth vocals on songs like "The Christmas Song" set a warm, nostalgic mood for the holidays.\n' +
+      '\n' +
+      '6. **"Miracles: The Holiday Album" by Kenny G (1994)**\n' +
+      '   - Instrumental and smooth jazz holiday classics, perfect for a relaxing holiday atmosphere.\n' +
+      '\n' +
+      '7. **"A Christmas Gift for You From Phil Spector" (1963)**\n' +
+      '   - A collection of Christmas songs featuring artists like The Ronettes and The Crystals, ideal for fans of the Wall of Sound.\n' +
+      '\n' +
+      '8. **"The Magic of Christmas" by Nat King Cole and The Ralph Carmichael Choir (1960)**\n' +
+      "   - Filled with traditional holiday songs, emphasizing Cole's rich voice surrounded by lush orchestration.\n" +
+      '\n' +
+      '9. **"Christmas in the Heart" by Bob Dylan (2009)**\n' +
+      "   - This album offers unique renditions of holiday standards with Dylan's unmistakable voice and style.\n" +
+      '\n' +
+      '10. **"A Very She & Him Christmas" by She & Him (2011)**\n' +
+      '    - Folksy renditions of Christmas classics by the indie duo, bringing a charming and whimsical feel to holiday music.\n' +
+      '\n' +
+      'These albums provide a variety of musical styles and interpretations of Christmas music, ensuring that there’s something for everyone to enjoy during the festive season.'
+  }
+}
+2024-09-18 13:27:24.037 DEBUG   /node_modules/cigs/dist/index.cjs:510   cig-album-generator     {
+  operation: 'generate',
+  context: 'init',
+  input: {
+    genre: 'Here is a list of popular Christmas albums across various genres and years:\n' +
+      '\n' +
+      '1. **"A Charlie Brown Christmas" by Vince Guaraldi Trio (1965)**\n' +
+      '   - A jazz album that has become a quintessential part of the holiday season, featuring whimsical and nostalgic melodies.\n' +
+      '\n' +
+      '2. **"Merry Christmas" by Mariah Carey (1994)**\n' +
+      '   - Known for the iconic song "All I Want for Christmas Is You," this album blends traditional Christmas songs with contemporary pop tunes.\n' +
+      '\n' +
+      '3. **"Elvis’ Christmas Album" by Elvis Presley (1957)**\n' +
+      '   - A classic rock and roll take on Christmas songs, including "Blue Christmas" and "Santa Bring My Baby Back (To Me)."\n' +
+      '\n' +
+      '4. **"Christmas" by Michael Bublé (2011)**\n' +
+      '   - A modern crooner’s take on classic holiday hits including "It’s Beginning to Look a Lot Like Christmas" and "White Christmas."\n' +
+      '\n' +
+      '5. **"The Christmas Song" by Nat King Cole (1961)**\n' +
+      '   - Nat King Cole’s smooth vocals on songs like "The Christmas Song" set a warm, nostalgic mood for the holidays.\n' +
+      '\n' +
+      '6. **"Miracles: The Holiday Album" by Kenny G (1994)**\n' +
+      '   - Instrumental and smooth jazz holiday classics, perfect for a relaxing holiday atmosphere.\n' +
+      '\n' +
+      '7. **"A Christmas Gift for You From Phil Spector" (1963)**\n' +
+      '   - A collection of Christmas songs featuring artists like The Ronettes and The Crystals, ideal for fans of the Wall of Sound.\n' +
+      '\n' +
+      '8. **"The Magic of Christmas" by Nat King Cole and The Ralph Carmichael Choir (1960)**\n' +
+      "   - Filled with traditional holiday songs, emphasizing Cole's rich voice surrounded by lush orchestration.\n" +
+      '\n' +
+      '9. **"Christmas in the Heart" by Bob Dylan (2009)**\n' +
+      "   - This album offers unique renditions of holiday standards with Dylan's unmistakable voice and style.\n" +
+      '\n' +
+      '10. **"A Very She & Him Christmas" by She & Him (2011)**\n' +
+      '    - Folksy renditions of Christmas classics by the indie duo, bringing a charming and whimsical feel to holiday music.\n' +
+      '\n' +
+      'These albums provide a variety of musical styles and interpretations of Christmas music, ensuring that there’s something for everyone to enjoy during the festive season.'
+  },
+  instruction: 'Generate a list of fake albums that sound like they would be for a given genre',
+  examples: [
+    {
+      input: "{ genre: 'rock' }",
+      output: {
+        title: 'Exile on Main St.',
+        artist: 'The Rolling Stones',
+        year: 1972,
+        numTracks: 12
+      }
+    }
+  ]
+}
+2024-09-18 13:27:24.040 TRACE   /node_modules/cigs/dist/index.cjs:524   cig-album-generator     {
+  operation: 'generate',
+  context: 'extracted prompt',
+  prompt: '\n' +
+    '|SYSTEM|\n' +
+    '\n' +
+    '# Expert Data Generator\n' +
+    '\n' +
+    'You are an expert data generator that always creates high-quality, random\n' +
+    'examples of a description or type. The data you produce is relied on for\n' +
+    'testing, examples, demonstrations, and more. You use inference or deduction\n' +
+    'whenever necessary to supply missing or omitted data.\n' +
+    '\n' +
+    'Unless explicitly stated otherwise, assume a request for a VARIED\n' +
+    'and REALISTIC selection of useful outputs that meet the given criteria. However,\n' +
+    'prefer common responses to uncommon ones.\n' +
+    '\n' +
+    'If a description is provided, generate examples that satisfy the description. \n' +
+    'Do not provide more information than requested.\n' +
+    '\n' +
+    '|USER|\n' +
+    '\n' +
+    '## Input data\n' +
+    '{&quot;genre&quot;:&quot;Here is a list of popular Christmas albums across various genres and years:\\n\\n1. **\\&quot;A Charlie Brown Christmas\\&quot; by Vince Guaraldi Trio (1965)**\\n   - A jazz album that has become a quintessential part of the holiday season, featuring whimsical and nostalgic melodies.\\n\\n2. **\\&quot;Merry Christmas\\&quot; by Mariah Carey (1994)**\\n   - Known for the iconic song \\&quot;All I Want for Christmas Is You,\\&quot; this album blends traditional Christmas songs with contemporary pop tunes.\\n\\n3. **\\&quot;Elvis’ Christmas Album\\&quot; by Elvis Presley (1957)**\\n   - A classic rock and roll take on Christmas songs, including \\&quot;Blue Christmas\\&quot; and \\&quot;Santa Bring My Baby Back (To Me).\\&quot;\\n\\n4. **\\&quot;Christmas\\&quot; by Michael Bublé (2011)**\\n   - A modern crooner’s take on classic holiday hits including \\&quot;It’s Beginning to Look a Lot Like Christmas\\&quot; and \\&quot;White Christmas.\\&quot;\\n\\n5. **\\&quot;The Christmas Song\\&quot; by Nat King Cole (1961)**\\n   - Nat King Cole’s smooth vocals on songs like \\&quot;The Christmas Song\\&quot; set a warm, nostalgic mood for the holidays.\\n\\n6. **\\&quot;Miracles: The Holiday Album\\&quot; by Kenny G (1994)**\\n   - Instrumental and smooth jazz holiday classics, perfect for a relaxing holiday atmosphere.\\n\\n7. **\\&quot;A Christmas Gift for You From Phil Spector\\&quot; (1963)**\\n   - A collection of Christmas songs featuring artists like The Ronettes and The Crystals, ideal for fans of the Wall of Sound.\\n\\n8. **\\&quot;The Magic of Christmas\\&quot; by Nat King Cole and The Ralph Carmichael Choir (1960)**\\n   - Filled with traditional holiday songs, emphasizing Cole&#39;s rich voice surrounded by lush orchestration.\\n\\n9. **\\&quot;Christmas in the Heart\\&quot; by Bob Dylan (2009)**\\n   - This album offers unique renditions of holiday standards with Dylan&#39;s unmistakable voice and style.\\n\\n10. **\\&quot;A Very She &amp; Him Christmas\\&quot; by She &amp; Him (2011)**\\n    - Folksy renditions of Christmas classics by the indie duo, bringing a charming and whimsical feel to holiday music.\\n\\nThese albums provide a variety of musical styles and interpretations of Christmas music, ensuring that there’s something for everyone to enjoy during the festive season.&quot;}\n' +
+    '## Requested number of entities\n' +
+    '\n' +
+    'Generate a list of 3 random entities.\n' +
+    '\n' +
+    '## Instructions\n' +
+    '\n' +
+    'Generate a list of fake albums that sound like they would be for a given genre'
+}
+2024-09-18 13:27:25.202 DEBUG   /node_modules/cigs/dist/index.cjs:756   cig-album-generator     {
+  context: 'Operation 1 Output',
+  data: [
+    {
+      title: 'Winter Wonderland Echoes',
+      artist: 'The Sleigh Bells',
+      year: 2022,
+      numTracks: 10
+    },
+    {
+      title: 'Jazzy Nights of Christmas',
+      artist: 'Ella Sparks & The Smooth Quintet',
+      year: 2018,
+      numTracks: 12
+    },
+    {
+      title: 'Tinsel Town Tunes',
+      artist: 'The December Parades',
+      year: 2021,
+      numTracks: 9
+    }
+  ]
+}

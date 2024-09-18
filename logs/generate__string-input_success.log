@@ -1,0 +1,98 @@
+// input: 'I want a list of rock albums'
+
+2024-09-18 13:24:29.963 INFO    /node_modules/cigs/dist/index.cjs:728   cig-album-generator     {
+  context: 'Running cig',
+  input: 'I want a list of rock albums',
+  operationCount: 1
+}
+2024-09-18 13:24:29.967 DEBUG   /node_modules/cigs/dist/index.cjs:735   cig-album-generator     {
+  context: 'Received string input'
+}
+(node:80010) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+2024-09-18 13:24:30.681 DEBUG   /node_modules/cigs/dist/index.cjs:738   cig-album-generator     {
+  context: 'Processed string input',
+  result: {
+    genre: 'rock'
+  }
+}
+2024-09-18 13:24:30.682 DEBUG   /node_modules/cigs/dist/index.cjs:754   cig-album-generator     {
+  context: 'Operation 1 Input',
+  data: {
+    genre: 'rock'
+  }
+}
+2024-09-18 13:24:30.682 DEBUG   /node_modules/cigs/dist/index.cjs:510   cig-album-generator     {
+  operation: 'generate',
+  context: 'init',
+  input: {
+    genre: 'rock'
+  },
+  instruction: 'Generate a list of fake albums that sound like they would be for a given genre',
+  examples: [
+    {
+      input: "{ genre: 'rock' }",
+      output: {
+        title: 'Exile on Main St.',
+        artist: 'The Rolling Stones',
+        year: 1972,
+        numTracks: 12
+      }
+    }
+  ]
+}
+2024-09-18 13:24:30.685 TRACE   /node_modules/cigs/dist/index.cjs:524   cig-album-generator     {
+  operation: 'generate',
+  context: 'extracted prompt',
+  prompt: '\n' +
+    '|SYSTEM|\n' +
+    '\n' +
+    '# Expert Data Generator\n' +
+    '\n' +
+    'You are an expert data generator that always creates high-quality, random\n' +
+    'examples of a description or type. The data you produce is relied on for\n' +
+    'testing, examples, demonstrations, and more. You use inference or deduction\n' +
+    'whenever necessary to supply missing or omitted data.\n' +
+    '\n' +
+    'Unless explicitly stated otherwise, assume a request for a VARIED\n' +
+    'and REALISTIC selection of useful outputs that meet the given criteria. However,\n' +
+    'prefer common responses to uncommon ones.\n' +
+    '\n' +
+    'If a description is provided, generate examples that satisfy the description. \n' +
+    'Do not provide more information than requested.\n' +
+    '\n' +
+    '|USER|\n' +
+    '\n' +
+    '## Input data\n' +
+    '{&quot;genre&quot;:&quot;rock&quot;}\n' +
+    '## Requested number of entities\n' +
+    '\n' +
+    'Generate a list of 3 random entities.\n' +
+    '\n' +
+    '## Instructions\n' +
+    '\n' +
+    'Generate a list of fake albums that sound like they would be for a given genre'
+}
+2024-09-18 13:24:31.850 DEBUG   /node_modules/cigs/dist/index.cjs:756   cig-album-generator     {
+  context: 'Operation 1 Output',
+  data: [
+    {
+      title: 'Rebel Heart',
+      artist: 'Iron Echo',
+      year: 2021,
+      numTracks: 10
+    },
+    {
+      title: 'Eclipsed Dreams',
+      artist: 'Sonic Vortex',
+      year: 2019,
+      numTracks: 12
+    },
+    {
+      title: 'Crimson Skies',
+      artist: 'The Rusty Strings',
+      year: 2023,
+      numTracks: 8
+    }
+  ]
+}

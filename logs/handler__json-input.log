@@ -1,0 +1,30 @@
+// input: { username: "Bob" }
+
+2024-09-18 15:59:29.948 INFO    /node_modules/cigs/dist/index.cjs:728   cig-get-user-color      {
+  context: 'Running cig',
+  input: {
+    username: 'Bob'
+  },
+  operationCount: 1
+}
+2024-09-18 15:59:29.954 DEBUG   /node_modules/cigs/dist/index.cjs:754   cig-get-user-color      {
+  context: 'Operation 1 Input',
+  data: {
+    username: 'Bob'
+  }
+}
+2024-09-18 15:59:29.954 DEBUG   /node_modules/cigs/dist/index.cjs:644   cig-get-user-color      {
+  operation: 'handler',
+  context: 'init',
+  input: {
+    username: 'Bob'
+  }
+}
+(node:83440) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+2024-09-18 15:59:29.955 DEBUG   /node_modules/cigs/dist/index.cjs:756   cig-get-user-color      {
+  context: 'Operation 1 Output',
+  data: {
+    color: 'green'
+  }
+}

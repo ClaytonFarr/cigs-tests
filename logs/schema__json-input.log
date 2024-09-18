@@ -1,0 +1,61 @@
+// input: { genre: 'rock' }
+
+2024-09-18 13:30:25.335 INFO    /node_modules/cigs/dist/index.cjs:728   cig-album-generator     {
+  context: 'Running cig',
+  input: {
+    genre: 'rock'
+  },
+  operationCount: 1
+}
+2024-09-18 13:30:25.341 DEBUG   /node_modules/cigs/dist/index.cjs:754   cig-album-generator     {
+  context: 'Operation 1 Input',
+  data: {
+    genre: 'rock'
+  }
+}
+2024-09-18 13:30:25.341 DEBUG   /node_modules/cigs/dist/index.cjs:455   cig-album-generator     {
+  operation: 'schema',
+  context: 'init',
+  input: {
+    genre: 'rock'
+  },
+  instruction: 'Generate a list of fake albums that sound like they would be for a given genre',
+  examples: [
+    {
+      input: "{ genre: 'rock' }",
+      output: {
+        title: 'Exile on Main St.',
+        artist: 'The Rolling Stones',
+        year: 1972,
+        numTracks: 12
+      }
+    }
+  ]
+}
+(node:81003) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+2024-09-18 13:30:25.342 TRACE   /node_modules/cigs/dist/index.cjs:469   cig-album-generator     {
+  operation: 'schema',
+  context: 'extracted prompt',
+  prompt: '\n' +
+    '|SYSTEM|\n' +
+    '# Expert Entity Extractor\n' +
+    'You are an expert entity extractor that always maintains as much semantic\n' +
+    'meaning as possible. You use inference or deduction whenever necessary to\n' +
+    'supply missing or omitted data. Examine the provided data, text, or\n' +
+    'information and generate a list of any entities or objects that match the\n' +
+    'requested format.\n' +
+    '|USER|\n' +
+    '## Data to extract\n' +
+    '{&quot;genre&quot;:&quot;rock&quot;}## Additional instructions\n' +
+    'Generate a list of fake albums that sound like they would be for a given genre'
+}
+2024-09-18 13:30:26.107 DEBUG   /node_modules/cigs/dist/index.cjs:756   cig-album-generator     {
+  context: 'Operation 1 Output',
+  data: {
+    title: 'Midnight Drive',
+    artist: 'The Rusty Wheels',
+    year: 2022,
+    numTracks: 10
+  }
+}

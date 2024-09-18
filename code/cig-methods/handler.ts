@@ -28,7 +28,7 @@ const handlerCig = cig("get-user-color", userInfoSchema, (config) => {
 
 (async () => {
   try {
-    // const call01Json = await handlerCig.run({ username: "Alice" });
+    const call01Json = await handlerCig.run({ username: "Alice" });
     // console.log('Call 01 as Json: ', call01Json);
 
     // const call01String = await handlerCig.run("Alice");
@@ -37,7 +37,7 @@ const handlerCig = cig("get-user-color", userInfoSchema, (config) => {
     // const call02Json = await handlerCig.run({ username: "Bob" });
     // console.log('Call 02 as Json: ', call02Json);
 
-    const call02String = await handlerCig.run("What's Bob's favorite color?");
+    // const call02String = await handlerCig.run("What's Bob's favorite color?");
     // console.log('Call 02 as String: ', call02String);
 
   } catch (error) {
@@ -46,7 +46,7 @@ const handlerCig = cig("get-user-color", userInfoSchema, (config) => {
 })();
 
 /*
-* .handler() observations
+* .handler()
 
 * If using JSON object as input:
 

@@ -1,0 +1,37 @@
+// input: "What's Bob's favorite color?"
+
+2024-09-18 16:00:51.743 INFO    /node_modules/cigs/dist/index.cjs:728   cig-get-user-color      {
+  context: 'Running cig',
+  input: "What's Bob's favorite color?",
+  operationCount: 1
+}
+2024-09-18 16:00:51.747 DEBUG   /node_modules/cigs/dist/index.cjs:735   cig-get-user-color      {
+  context: 'Received string input'
+}
+(node:83767) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+2024-09-18 16:00:52.312 DEBUG   /node_modules/cigs/dist/index.cjs:738   cig-get-user-color      {
+  context: 'Processed string input',
+  result: {
+    username: 'Bob'
+  }
+}
+2024-09-18 16:00:52.313 DEBUG   /node_modules/cigs/dist/index.cjs:754   cig-get-user-color      {
+  context: 'Operation 1 Input',
+  data: {
+    username: 'Bob'
+  }
+}
+2024-09-18 16:00:52.313 DEBUG   /node_modules/cigs/dist/index.cjs:644   cig-get-user-color      {
+  operation: 'handler',
+  context: 'init',
+  input: {
+    username: 'Bob'
+  }
+}
+2024-09-18 16:00:52.314 DEBUG   /node_modules/cigs/dist/index.cjs:756   cig-get-user-color      {
+  context: 'Operation 1 Output',
+  data: {
+    color: 'green'
+  }
+}

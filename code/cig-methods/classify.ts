@@ -36,7 +36,7 @@ const classifyCig = cig("sentiment-analyzer", sentimentInputSchema, (config) => 
 })();
 
 /*
-* .classify() observations
+* .classify()
 
 * If using JSON object as input:
 

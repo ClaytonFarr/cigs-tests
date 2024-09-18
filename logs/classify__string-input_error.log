@@ -1,0 +1,76 @@
+// input: { text: "I don't think we'll get along." }
+
+2024-09-18 15:58:19.596 INFO    /node_modules/cigs/dist/index.cjs:728   cig-sentiment-analyzer  {
+  context: 'Running cig',
+  input: "I don't think we'll get along.",
+  operationCount: 1
+}
+2024-09-18 15:58:19.600 DEBUG   /node_modules/cigs/dist/index.cjs:735   cig-sentiment-analyzer  {
+  context: 'Received string input'
+}
+(node:83263) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+2024-09-18 15:58:21.154 DEBUG   /node_modules/cigs/dist/index.cjs:738   cig-sentiment-analyzer  {
+  context: 'Processed string input',
+  result: {
+    text: "It's completely normal to have differences or concerns about compatibility. Building a connection takes time and understanding. If you're comfortable, it might help to discuss what specific differences you're noticing, as open communication can sometimes address underlying issues or lead to a better understanding of each other's perspectives. If after consideration you still feel this way, it’s okay to accept that not everyone will connect perfectly, and that's a part of life. Either way, it's okay to prioritize your well-being and comfort in any relationship."
+  }
+}
+2024-09-18 15:58:21.155 DEBUG   /node_modules/cigs/dist/index.cjs:754   cig-sentiment-analyzer  {
+  context: 'Operation 1 Input',
+  data: {
+    text: "It's completely normal to have differences or concerns about compatibility. Building a connection takes time and understanding. If you're comfortable, it might help to discuss what specific differences you're noticing, as open communication can sometimes address underlying issues or lead to a better understanding of each other's perspectives. If after consideration you still feel this way, it’s okay to accept that not everyone will connect perfectly, and that's a part of life. Either way, it's okay to prioritize your well-being and comfort in any relationship."
+  }
+}
+2024-09-18 15:58:21.155 DEBUG   /node_modules/cigs/dist/index.cjs:590   cig-sentiment-analyzer  {
+  operation: 'classify',
+  context: 'init',
+  input: {
+    text: "It's completely normal to have differences or concerns about compatibility. Building a connection takes time and understanding. If you're comfortable, it might help to discuss what specific differences you're noticing, as open communication can sometimes address underlying issues or lead to a better understanding of each other's perspectives. If after consideration you still feel this way, it’s okay to accept that not everyone will connect perfectly, and that's a part of life. Either way, it's okay to prioritize your well-being and comfort in any relationship."
+  },
+  instruction: 'Classify the sentiment of the input text',
+  examples: [
+    {
+      input: 'I love you!',
+      output: 'cool'
+    },
+    {
+      input: 'I hate you!',
+      output: 'lame'
+    }
+  ]
+}
+2024-09-18 15:58:21.158 TRACE   /node_modules/cigs/dist/index.cjs:604   cig-sentiment-analyzer  {
+  operation: 'classify',
+  context: 'extracted prompt',
+  prompt: '\n' +
+    '|SYSTEM|\n' +
+    '# Expert Classifier\n' +
+    'You are an expert classifier that always maintains as much semantic meaning\n' +
+    'as possible when labeling text. You use inference or deduction whenever\n' +
+    'necessary to understand missing or omitted data. Classify the provided data,\n' +
+    'text, or information as one of the provided labels. For boolean labels,\n' +
+    'consider "truthy" or affirmative inputs to be "true".\n' +
+    '\n' +
+    '|USER|\n' +
+    '## Text or data to classify\n' +
+    '{&quot;text&quot;:&quot;It&#39;s completely normal to have differences or concerns about compatibility. Building a connection takes time and understanding. If you&#39;re comfortable, it might help to discuss what specific differences you&#39;re noticing, as open communication can sometimes address underlying issues or lead to a better understanding of each other&#39;s perspectives. If after consideration you still feel this way, it’s okay to accept that not everyone will connect perfectly, and that&#39;s a part of life. Either way, it&#39;s okay to prioritize your well-being and comfort in any relationship.&quot;}\n' +
+    '## Additional instructions\n' +
+    'Classify the sentiment of the input text\n' +
+    '## Examples\n' +
+    'Example #1:\n' +
+    'Input: I love you!Label: cool\n' +
+    'Example #2:\n' +
+    'Input: I hate you!Label: lame\n' +
+    '\n' +
+    '## Labels\n' +
+    'You must classify the data as one of the following labels, which are numbered (starting from 0) and provide a brief description. Output the label number only.\n' +
+    '\n' +
+    '- Label #0: cool- Label #1: lame- Label #2: neutral\n' +
+    '|ASSISTANT|\n' +
+    'The best label for the data is Label\n'
+}
+2024-09-18 15:58:21.450 DEBUG   /node_modules/cigs/dist/index.cjs:756   cig-sentiment-analyzer  {
+  context: 'Operation 1 Output',
+  data: 'cool'
+}

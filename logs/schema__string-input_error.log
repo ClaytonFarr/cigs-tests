@@ -1,0 +1,235 @@
+// input: 'I want a list of sad albums'
+
+2024-09-18 13:31:08.018 INFO    /node_modules/cigs/dist/index.cjs:728   cig-album-generator     {
+  context: 'Running cig',
+  input: 'I want a list of sad albums',
+  operationCount: 1
+}
+2024-09-18 13:31:08.023 DEBUG   /node_modules/cigs/dist/index.cjs:735   cig-album-generator     {
+  context: 'Received string input'
+}
+(node:81171) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+2024-09-18 13:31:08.604 DEBUG   /node_modules/cigs/dist/index.cjs:738   cig-album-generator     {
+  context: 'Processed string input',
+  result: {
+    genre: 'Sad'
+  }
+}
+2024-09-18 13:31:08.604 DEBUG   /node_modules/cigs/dist/index.cjs:754   cig-album-generator     {
+  context: 'Operation 1 Input',
+  data: {
+    genre: 'Sad'
+  }
+}
+2024-09-18 13:31:08.605 DEBUG   /node_modules/cigs/dist/index.cjs:455   cig-album-generator     {
+  operation: 'schema',
+  context: 'init',
+  input: {
+    genre: 'Sad'
+  },
+  instruction: 'Generate a list of fake albums that sound like they would be for a given genre',
+  examples: [
+    {
+      input: "{ genre: 'rock' }",
+      output: {
+        title: 'Exile on Main St.',
+        artist: 'The Rolling Stones',
+        year: 1972,
+        numTracks: 12
+      }
+    }
+  ]
+}
+2024-09-18 13:31:08.607 TRACE   /node_modules/cigs/dist/index.cjs:469   cig-album-generator     {
+  operation: 'schema',
+  context: 'extracted prompt',
+  prompt: '\n' +
+    '|SYSTEM|\n' +
+    '# Expert Entity Extractor\n' +
+    'You are an expert entity extractor that always maintains as much semantic\n' +
+    'meaning as possible. You use inference or deduction whenever necessary to\n' +
+    'supply missing or omitted data. Examine the provided data, text, or\n' +
+    'information and generate a list of any entities or objects that match the\n' +
+    'requested format.\n' +
+    '|USER|\n' +
+    '## Data to extract\n' +
+    '{&quot;genre&quot;:&quot;Sad&quot;}## Additional instructions\n' +
+    'Generate a list of fake albums that sound like they would be for a given genre'
+}
+2024-09-18 13:31:09.508 DEBUG   /node_modules/cigs/dist/index.cjs:756   cig-album-generator     {
+  context: 'Operation 1 Output',
+  data: {
+    title: 'Whispers of the Rain',
+    artist: 'Evelyn Skye',
+    year: 2022,
+    numTracks: 10
+  }
+}
+clayton@claytonacstudio cigs-tests % npm run schema
+
+> schema
+> tsc && node dist/schema.js
+
+2024-09-18 13:31:25.589 INFO    /node_modules/cigs/dist/index.cjs:728   cig-album-generator     {
+  context: 'Running cig',
+  input: 'I want a list of sad albums',
+  operationCount: 1
+}
+2024-09-18 13:31:25.594 DEBUG   /node_modules/cigs/dist/index.cjs:735   cig-album-generator     {
+  context: 'Received string input'
+}
+(node:81206) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+2024-09-18 13:31:30.825 DEBUG   /node_modules/cigs/dist/index.cjs:738   cig-album-generator     {
+  context: 'Processed string input',
+  result: {
+    genre: 'Here is a list of sad albums known for their emotional and somber themes:\n' +
+      '\n' +
+      '1. **"Sea Change" by Beck**\n' +
+      '   - Released in 2002, this album explores themes of heartbreak and loss.\n' +
+      '\n' +
+      '2. **"Blue" by Joni Mitchell**\n' +
+      "   - Released in 1971, it's filled with raw emotion and personal narratives, capturing feelings of loneliness and love gone wrong.\n" +
+      '\n' +
+      '3. **"For Emma, Forever Ago" by Bon Iver**\n' +
+      '   - Released in 2007, known for its haunting melodies and introspective lyrics.\n' +
+      '\n' +
+      '4. **"The Antlers - Hospice"**\n' +
+      '   - Released in 2009, a concept album telling a heartbreaking story set in a hospital hospice.\n' +
+      '\n' +
+      '5. **"Carrie & Lowell" by Sufjan Stevens**\n' +
+      '   - Released in 2015, this album deals with themes of grief and family loss.\n' +
+      '\n' +
+      '6. **"A Crow Looked At Me" by Mount Eerie**\n' +
+      "   - Released in 2017, known for its raw depiction of the artist's grieving process after the death of his wife.\n" +
+      '\n' +
+      '7. **"OK Computer" by Radiohead**\n' +
+      '   - Although not entirely sad, the bleak themes of alienation and modern life produce a melancholic effect.\n' +
+      '\n' +
+      '8. **"Heavier Things" by John Mayer**\n' +
+      '   - Released in 2003, known for its introspective nature and contemplation of lost love.\n' +
+      '\n' +
+      '9. **"In the Aeroplane Over the Sea" by Neutral Milk Hotel**\n' +
+      "   - Released in 1998, the album's themes of love and death contribute to its melancholy tone.\n" +
+      '\n' +
+      '10. **"Ghosteen" by Nick Cave and the Bad Seeds**\n' +
+      '    - Released in 2019, focusing on themes of loss and regeneration following personal tragedy.\n' +
+      '\n' +
+      'These albums offer a range of sad and reflective narratives that capture various aspects of heartache, loss, and human vulnerability.'
+  }
+}
+2024-09-18 13:31:30.827 DEBUG   /node_modules/cigs/dist/index.cjs:754   cig-album-generator     {
+  context: 'Operation 1 Input',
+  data: {
+    genre: 'Here is a list of sad albums known for their emotional and somber themes:\n' +
+      '\n' +
+      '1. **"Sea Change" by Beck**\n' +
+      '   - Released in 2002, this album explores themes of heartbreak and loss.\n' +
+      '\n' +
+      '2. **"Blue" by Joni Mitchell**\n' +
+      "   - Released in 1971, it's filled with raw emotion and personal narratives, capturing feelings of loneliness and love gone wrong.\n" +
+      '\n' +
+      '3. **"For Emma, Forever Ago" by Bon Iver**\n' +
+      '   - Released in 2007, known for its haunting melodies and introspective lyrics.\n' +
+      '\n' +
+      '4. **"The Antlers - Hospice"**\n' +
+      '   - Released in 2009, a concept album telling a heartbreaking story set in a hospital hospice.\n' +
+      '\n' +
+      '5. **"Carrie & Lowell" by Sufjan Stevens**\n' +
+      '   - Released in 2015, this album deals with themes of grief and family loss.\n' +
+      '\n' +
+      '6. **"A Crow Looked At Me" by Mount Eerie**\n' +
+      "   - Released in 2017, known for its raw depiction of the artist's grieving process after the death of his wife.\n" +
+      '\n' +
+      '7. **"OK Computer" by Radiohead**\n' +
+      '   - Although not entirely sad, the bleak themes of alienation and modern life produce a melancholic effect.\n' +
+      '\n' +
+      '8. **"Heavier Things" by John Mayer**\n' +
+      '   - Released in 2003, known for its introspective nature and contemplation of lost love.\n' +
+      '\n' +
+      '9. **"In the Aeroplane Over the Sea" by Neutral Milk Hotel**\n' +
+      "   - Released in 1998, the album's themes of love and death contribute to its melancholy tone.\n" +
+      '\n' +
+      '10. **"Ghosteen" by Nick Cave and the Bad Seeds**\n' +
+      '    - Released in 2019, focusing on themes of loss and regeneration following personal tragedy.\n' +
+      '\n' +
+      'These albums offer a range of sad and reflective narratives that capture various aspects of heartache, loss, and human vulnerability.'
+  }
+}
+2024-09-18 13:31:30.827 DEBUG   /node_modules/cigs/dist/index.cjs:455   cig-album-generator     {
+  operation: 'schema',
+  context: 'init',
+  input: {
+    genre: 'Here is a list of sad albums known for their emotional and somber themes:\n' +
+      '\n' +
+      '1. **"Sea Change" by Beck**\n' +
+      '   - Released in 2002, this album explores themes of heartbreak and loss.\n' +
+      '\n' +
+      '2. **"Blue" by Joni Mitchell**\n' +
+      "   - Released in 1971, it's filled with raw emotion and personal narratives, capturing feelings of loneliness and love gone wrong.\n" +
+      '\n' +
+      '3. **"For Emma, Forever Ago" by Bon Iver**\n' +
+      '   - Released in 2007, known for its haunting melodies and introspective lyrics.\n' +
+      '\n' +
+      '4. **"The Antlers - Hospice"**\n' +
+      '   - Released in 2009, a concept album telling a heartbreaking story set in a hospital hospice.\n' +
+      '\n' +
+      '5. **"Carrie & Lowell" by Sufjan Stevens**\n' +
+      '   - Released in 2015, this album deals with themes of grief and family loss.\n' +
+      '\n' +
+      '6. **"A Crow Looked At Me" by Mount Eerie**\n' +
+      "   - Released in 2017, known for its raw depiction of the artist's grieving process after the death of his wife.\n" +
+      '\n' +
+      '7. **"OK Computer" by Radiohead**\n' +
+      '   - Although not entirely sad, the bleak themes of alienation and modern life produce a melancholic effect.\n' +
+      '\n' +
+      '8. **"Heavier Things" by John Mayer**\n' +
+      '   - Released in 2003, known for its introspective nature and contemplation of lost love.\n' +
+      '\n' +
+      '9. **"In the Aeroplane Over the Sea" by Neutral Milk Hotel**\n' +
+      "   - Released in 1998, the album's themes of love and death contribute to its melancholy tone.\n" +
+      '\n' +
+      '10. **"Ghosteen" by Nick Cave and the Bad Seeds**\n' +
+      '    - Released in 2019, focusing on themes of loss and regeneration following personal tragedy.\n' +
+      '\n' +
+      'These albums offer a range of sad and reflective narratives that capture various aspects of heartache, loss, and human vulnerability.'
+  },
+  instruction: 'Generate a list of fake albums that sound like they would be for a given genre',
+  examples: [
+    {
+      input: "{ genre: 'rock' }",
+      output: {
+        title: 'Exile on Main St.',
+        artist: 'The Rolling Stones',
+        year: 1972,
+        numTracks: 12
+      }
+    }
+  ]
+}
+2024-09-18 13:31:30.830 TRACE   /node_modules/cigs/dist/index.cjs:469   cig-album-generator     {
+  operation: 'schema',
+  context: 'extracted prompt',
+  prompt: '\n' +
+    '|SYSTEM|\n' +
+    '# Expert Entity Extractor\n' +
+    'You are an expert entity extractor that always maintains as much semantic\n' +
+    'meaning as possible. You use inference or deduction whenever necessary to\n' +
+    'supply missing or omitted data. Examine the provided data, text, or\n' +
+    'information and generate a list of any entities or objects that match the\n' +
+    'requested format.\n' +
+    '|USER|\n' +
+    '## Data to extract\n' +
+    '{&quot;genre&quot;:&quot;Here is a list of sad albums known for their emotional and somber themes:\\n\\n1. **\\&quot;Sea Change\\&quot; by Beck**\\n   - Released in 2002, this album explores themes of heartbreak and loss.\\n\\n2. **\\&quot;Blue\\&quot; by Joni Mitchell**\\n   - Released in 1971, it&#39;s filled with raw emotion and personal narratives, capturing feelings of loneliness and love gone wrong.\\n\\n3. **\\&quot;For Emma, Forever Ago\\&quot; by Bon Iver**\\n   - Released in 2007, known for its haunting melodies and introspective lyrics.\\n\\n4. **\\&quot;The Antlers - Hospice\\&quot;**\\n   - Released in 2009, a concept album telling a heartbreaking story set in a hospital hospice.\\n\\n5. **\\&quot;Carrie &amp; Lowell\\&quot; by Sufjan Stevens**\\n   - Released in 2015, this album deals with themes of grief and family loss.\\n\\n6. **\\&quot;A Crow Looked At Me\\&quot; by Mount Eerie**\\n   - Released in 2017, known for its raw depiction of the artist&#39;s grieving process after the death of his wife.\\n\\n7. **\\&quot;OK Computer\\&quot; by Radiohead**\\n   - Although not entirely sad, the bleak themes of alienation and modern life produce a melancholic effect.\\n\\n8. **\\&quot;Heavier Things\\&quot; by John Mayer**\\n   - Released in 2003, known for its introspective nature and contemplation of lost love.\\n\\n9. **\\&quot;In the Aeroplane Over the Sea\\&quot; by Neutral Milk Hotel**\\n   - Released in 1998, the album&#39;s themes of love and death contribute to its melancholy tone.\\n\\n10. **\\&quot;Ghosteen\\&quot; by Nick Cave and the Bad Seeds**\\n    - Released in 2019, focusing on themes of loss and regeneration following personal tragedy.\\n\\nThese albums offer a range of sad and reflective narratives that capture various aspects of heartache, loss, and human vulnerability.&quot;}## Additional instructions\n' +
+    'Generate a list of fake albums that sound like they would be for a given genre'
+}
+2024-09-18 13:31:31.737 DEBUG   /node_modules/cigs/dist/index.cjs:756   cig-album-generator     {
+  context: 'Operation 1 Output',
+  data: {
+    title: 'Whispers of Memory',
+    artist: 'Elena Frost',
+    year: 2021,
+    numTracks: 10
+  }
+}

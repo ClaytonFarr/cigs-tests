@@ -1,0 +1,81 @@
+// input: { usernames: ['john_doe', 'alice_wong'] }
+
+2024-09-18 13:18:16.278 INFO    /node_modules/cigs/dist/index.cjs:728   cig-handle-users-with-tools     {
+  context: 'Running cig',
+  input: {
+    usernames: [
+      'john_doe',
+      'alice_wong'
+    ]
+  },
+  operationCount: 2
+}
+2024-09-18 13:18:16.284 DEBUG   /node_modules/cigs/dist/index.cjs:754   cig-handle-users-with-tools     {
+  context: 'Operation 1 Input',
+  data: {
+    usernames: [
+      'john_doe',
+      'alice_wong'
+    ]
+  }
+}
+2024-09-18 13:18:16.285 DEBUG   /node_modules/cigs/dist/index.cjs:669   cig-handle-users-with-tools     {
+  operation: 'uses',
+  context: 'init',
+  input: {
+    usernames: [
+      'john_doe',
+      'alice_wong'
+    ]
+  },
+  instruction: ''
+}
+(node:79231) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+2024-09-18 13:18:18.033 DEBUG   /node_modules/cigs/dist/index.cjs:682   cig-handle-users-with-tools     {
+  operation: 'uses',
+  context: 'received tool execution output',
+  finalContent: 'Here is the information for the users:\n' +
+    '\n' +
+    '- **John Doe**\n' +
+    '  - Location: New York\n' +
+    '\n' +
+    '- **Alice Wong**\n' +
+    '  - Location: Tokyo',
+  instruction: ''
+}
+2024-09-18 13:18:18.034 DEBUG   /node_modules/cigs/dist/index.cjs:756   cig-handle-users-with-tools     {
+  context: 'Operation 1 Output',
+  data: 'Here is the information for the users:\n' +
+    '\n' +
+    '- **John Doe**\n' +
+    '  - Location: New York\n' +
+    '\n' +
+    '- **Alice Wong**\n' +
+    '  - Location: Tokyo'
+}
+2024-09-18 13:18:18.034 DEBUG   /node_modules/cigs/dist/index.cjs:754   cig-handle-users-with-tools     {
+  context: 'Operation 2 Input',
+  data: 'Here is the information for the users:\n' +
+    '\n' +
+    '- **John Doe**\n' +
+    '  - Location: New York\n' +
+    '\n' +
+    '- **Alice Wong**\n' +
+    '  - Location: Tokyo'
+}
+2024-09-18 13:18:18.035 DEBUG   /node_modules/cigs/dist/index.cjs:644   cig-handle-users-with-tools     {
+  operation: 'handler',
+  context: 'init',
+  input: 'Here is the information for the users:\n' +
+    '\n' +
+    '- **John Doe**\n' +
+    '  - Location: New York\n' +
+    '\n' +
+    '- **Alice Wong**\n' +
+    '  - Location: Tokyo'
+}
+2024-09-18 13:18:18.035 DEBUG   /node_modules/cigs/dist/index.cjs:756   cig-handle-users-with-tools     {
+  context: 'Operation 2 Output',
+  data: undefined
+}

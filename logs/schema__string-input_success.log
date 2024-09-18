@@ -1,0 +1,68 @@
+// input: 'I want a list of rock albums'
+
+2024-09-18 13:30:41.002 INFO    /node_modules/cigs/dist/index.cjs:728   cig-album-generator     {
+  context: 'Running cig',
+  input: 'I want a list of rock albums',
+  operationCount: 1
+}
+2024-09-18 13:30:41.007 DEBUG   /node_modules/cigs/dist/index.cjs:735   cig-album-generator     {
+  context: 'Received string input'
+}
+(node:81071) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+2024-09-18 13:30:41.572 DEBUG   /node_modules/cigs/dist/index.cjs:738   cig-album-generator     {
+  context: 'Processed string input',
+  result: {
+    genre: 'Rock'
+  }
+}
+2024-09-18 13:30:41.573 DEBUG   /node_modules/cigs/dist/index.cjs:754   cig-album-generator     {
+  context: 'Operation 1 Input',
+  data: {
+    genre: 'Rock'
+  }
+}
+2024-09-18 13:30:41.573 DEBUG   /node_modules/cigs/dist/index.cjs:455   cig-album-generator     {
+  operation: 'schema',
+  context: 'init',
+  input: {
+    genre: 'Rock'
+  },
+  instruction: 'Generate a list of fake albums that sound like they would be for a given genre',
+  examples: [
+    {
+      input: "{ genre: 'rock' }",
+      output: {
+        title: 'Exile on Main St.',
+        artist: 'The Rolling Stones',
+        year: 1972,
+        numTracks: 12
+      }
+    }
+  ]
+}
+2024-09-18 13:30:41.576 TRACE   /node_modules/cigs/dist/index.cjs:469   cig-album-generator     {
+  operation: 'schema',
+  context: 'extracted prompt',
+  prompt: '\n' +
+    '|SYSTEM|\n' +
+    '# Expert Entity Extractor\n' +
+    'You are an expert entity extractor that always maintains as much semantic\n' +
+    'meaning as possible. You use inference or deduction whenever necessary to\n' +
+    'supply missing or omitted data. Examine the provided data, text, or\n' +
+    'information and generate a list of any entities or objects that match the\n' +
+    'requested format.\n' +
+    '|USER|\n' +
+    '## Data to extract\n' +
+    '{&quot;genre&quot;:&quot;Rock&quot;}## Additional instructions\n' +
+    'Generate a list of fake albums that sound like they would be for a given genre'
+}
+2024-09-18 13:30:43.002 DEBUG   /node_modules/cigs/dist/index.cjs:756   cig-album-generator     {
+  context: 'Operation 1 Output',
+  data: {
+    title: 'Echoes of Dusk',
+    artist: 'The Whispering Shadows',
+    year: 2022,
+    numTracks: 10
+  }
+}
