@@ -18,6 +18,7 @@
   - is this effectively the same as `.generate()` @ 1?
 - `.classify()`
   - includes 'ASSISTANT' in prompt, but other methods do not, why?
+  - why using 'ASSISTANT' in prompt - is it similar to Claude 'prompt prefilling' to help shape response?
 - `.uses()`
   - what model will `.uses()` cigs use if they do not have model specified by their own `config.setModel()`?
     - will they use model defined in `config.setModel()` for the main (calling) cig?
