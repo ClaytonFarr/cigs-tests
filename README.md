@@ -1,7 +1,7 @@
 # Exploring `cigs` LLM Workflow Framework
 
 - https://github.com/cigs-tech/cigs
-- as of 2024-09-18 (version is `0.1.4`)
+- as of 2024-09-19 (version is `0.1.4`)
 
 # Notes
 
