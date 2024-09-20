@@ -11,7 +11,8 @@ Do this by completing 2 phases of work:
    - the workflow's desired output(s), including any preferences for the format of the output(s)
    - the workflow's expected inputs, including any constraints on the input(s)
    - any preferences for the workflow's structure or steps
-2. create a new markdown document (`/notes/workflows/workflow-{workflowLabel}.md`) that contains a step-by-step workflow outline which:
+2. create a new markdown document (`/notes/workflows/workflow-{workflowLabel}.md`)
+3. update new document content to contain a step-by-step workflow outline which:
    - specifies the workflow's input(s) and output(s)
    - specifies the steps to take to successfully convert the inputs into the outputs
      - utilize as small and as simple steps as possible (each step should be simple enough to have a very high likelihood of success)
@@ -19,9 +20,9 @@ Do this by completing 2 phases of work:
    - includes flow logic to handle
      - any errors that may occur during the workflow
      - asking the user for clarification or additional information if needed
-3. append to end of the outline document a simple real-world example that demonstrates the expected behavior of the workflow
-4. ask the user to review the workflow outline and provide feedback
-5. repeat steps 2-4 until the workflow outline is approved by the user
+4. append to end of the outline document a simple real-world example that demonstrates the expected behavior of the workflow
+5. ask the user to review the workflow outline and provide feedback
+6. repeat steps 3-4 until the workflow outline is approved by the user
 
 **Phase 1 Work Considerations**
 
@@ -33,12 +34,14 @@ Do this by completing 2 phases of work:
 ## Phase 2
 
 1. reference the approved workflow outline (`/notes/workflows/workflow-{workflowLabel}.md`)
-2. create a new script (`/code/workflows/workflow-{workflowLabel}.ts`) that:
+2. create a new typescript file (`/code/workflows/workflow-{workflowLabel}.ts`)
+3. update script content (`/code/workflows/workflow-{workflowLabel}.ts`) to:
    - utilizes `cigs` (an llm workflow framework) to implement the workflow
-   - includes all code needed to successfully implement the workflow, including error handling and user input handling
+   - includes all code needed to successfully implement the workflow, including error handling and user input handling (no placeholders)
+   - includes concise and clear code comments
    - executes workflow with example from outline's example section
-3. ask the user to run the workflow script and provide feedback
-4. repeat steps 2-3 until the workflow script is approved by the user
+4. ask the user to run the workflow script and provide feedback
+5. repeat steps 3-4 until the workflow script is approved by the user
 
 **Phase 2 Work Considerations**
 
@@ -68,8 +71,3 @@ Preferences:
   - specify logging level in all cig workflows with a constant (`const LOG_LEVEL = 1`)
   - include instruction with each method; ensure instructions are as clear and concise as possible to complete the desired task
   - include at least 2 realistic examples with each method that will help the LLM understand the desired task and achieve the desired output(s)
-
-_cigs examples_
-
-- scripts: `/code/cig-methods/`
-- script logs: `/logs/cig-methods/`
