@@ -15,7 +15,7 @@
 **Methods**
 
 - `.schema()`
-  - is this effectively the same as `.generate()` @ 1?
+  - is this effectively same as `.generate()` @ 1 or designed to be used differently?
 - `.classify()`
   - includes 'ASSISTANT' in prompt, but other methods do not, why?
   - why using 'ASSISTANT' in prompt - is it similar to Claude 'prompt prefilling' to help shape response?

@@ -6,8 +6,7 @@
     "cig-classify": "tsc && node dist/cig-methods/classify.js",
     "cig-handler": "tsc && node dist/cig-methods/handler.js",
     "cig-uses": "tsc && node dist/cig-methods/uses.js",
-    "workflow-plan-01": "tsc && node dist/workflows/workflow-plan-01.js",
-    "workflow-plan-02": "tsc && node dist/workflows/workflow-plan-02.js"
+    "plan": "tsc && node dist/workflows/plan.js"
   },
   "devDependencies": {
     "@types/node": "^14.14.31",
