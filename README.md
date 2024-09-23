@@ -10,31 +10,6 @@
 - currently, each work session requires manually setting OPENAI_API_KEY as local var; e.g. `export OPENAI_API_KEY=sk-...`
 - providing input via structured JSON is still most reliable (string inputs can be inconsistent)
 
-## 🤔 Questions
-
-**Methods**
-
-- `.schema()`
-  - is this effectively same as `.generate()` @ 1 or designed to be used differently?
-- `.classify()`
-  - includes 'ASSISTANT' in prompt, but other methods do not, why?
-  - why using 'ASSISTANT' in prompt - is it similar to Claude 'prompt prefilling' to help shape response?
-- `.uses()`
-  - what model will `.uses()` cigs use if they do not have model specified by their own `config.setModel()`?
-    - will they use model defined in `config.setModel()` for the main (calling) cig?
-  - are tools limited to other cigs instances only?
-  - what is 'instruction' key used for in `.uses` operation?
-    - doesn't use value from `config.addInstruction()`, if provided
-    - always appears to be empty (see `logs/uses__.log` files)
-- is `defaultOperation` in codebase (and its prompt) intended to be accessed/usable by user?
-  - if so, how is it accessed?
-  - if not, what is its purpose; does it have any effect on workflows?
-
-**Config**
-
-- `config.setDescription()`
-  - how is used & what does it affect? (doesn't appear to be affecting output)
-
 ## 🐛 Bugs?
 
 **Methods**
@@ -65,6 +40,31 @@
 **Misc**
 
 - punycode warning: `DeprecationWarning: The 'punycode' module is deprecated. Please use a userland alternative instead.`
+
+## 🤔 Questions
+
+**Methods**
+
+- `.schema()`
+  - is this effectively same as `.generate()` @ 1 or designed to be used differently?
+- `.classify()`
+  - includes 'ASSISTANT' in prompt, but other methods do not, why?
+  - why using 'ASSISTANT' in prompt - is it similar to Claude 'prompt prefilling' to help shape response?
+- `.uses()`
+  - what model will `.uses()` cigs use if they do not have model specified by their own `config.setModel()`?
+    - will they use model defined in `config.setModel()` for the main (calling) cig?
+  - are tools limited to other cigs instances only?
+  - what is 'instruction' key used for in `.uses` operation?
+    - doesn't use value from `config.addInstruction()`, if provided
+    - always appears to be empty (see `logs/uses__.log` files)
+- is `defaultOperation` in codebase (and its prompt) intended to be accessed/usable by user?
+  - if so, how is it accessed?
+  - if not, what is its purpose; does it have any effect on workflows?
+
+**Config**
+
+- `config.setDescription()`
+  - how is used & what does it affect? (doesn't appear to be affecting output)
 
 ## 🧰 Enhancements?
 

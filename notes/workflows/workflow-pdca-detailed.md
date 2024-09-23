@@ -1,4 +1,4 @@
-# PDCA Workflow
+# Plan-Do-Check-Act (PDCA) Workflow
 
 ## Overview
 

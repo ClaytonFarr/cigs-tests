@@ -15,7 +15,7 @@ import { log } from "console";
 // Constants
 // ================================
 
-const logLevel = 3; // 4 = off
+const logLevel = 1; // 4 = off
 
 // Schemas
 // ================================
@@ -78,7 +78,7 @@ const pdca = cig("pdca", workflowInputSchema, (config) => {
   // Validate Input
   // --------------
 
-  // Initialize infeasibleElements and attemptsCount
+  // Initialize: infeasibleElements, attemptsCount
   // While infeasibleElements exist and attemptsCount < maxInputRefinements:
     // For each element in targetOutput:
       // Assess feasibility of creating element from input
@@ -98,7 +98,7 @@ const pdca = cig("pdca", workflowInputSchema, (config) => {
   // Organize Elements
   // -----------------
 
-  // Initialize requiredElements, optionalElements, and dependencyGraph
+  // Initialize: requiredElements, optionalElements, dependencyGraph
   // For each element in targetOutput:
     // Identify if required or optional
     // Determine priority (high, medium, low)
@@ -115,8 +115,7 @@ const pdca = cig("pdca", workflowInputSchema, (config) => {
   // Process Elements
   // ----------------
 
-  // Initialize completedElements and waitingElements
-  // Identify independent elements for parallel processing
+  // Initialize: completedElements, waitingElements
   // For each element in orderedElementList:
     // If element is independent:
       // Process in parallel
